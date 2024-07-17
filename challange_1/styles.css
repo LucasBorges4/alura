@@ -1,0 +1,76 @@
+/* styles.css */
+
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F3F5FC;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Painel esquerdo */
+.left-panel {
+  width: 40%;
+  padding: 20px;
+  background-color: #E8E8E8;
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 2em;
+  color: #0A3871;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #9B9797;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #0A3871;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:last-child {
+  margin-right: 0;
+}
+
+/* Painel direito */
+.right-panel {
+  width: 60%;
+  padding: 20px;
+  background-color: #F0FFFF;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.message-box {
+  color: #67808E;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .left-panel,
+  .right-panel {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
